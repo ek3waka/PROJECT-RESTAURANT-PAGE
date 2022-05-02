@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root {
+    --card-width: 250px;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    
+    margin: 0;
+    background-color: hsla(226, 41%, 10%, 0.952);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    background-color: hsl(246, 80%, 60%);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar {
+    display: flex;
+    gap: 5em;
+    height: 100%;
+}
+
+.navbar-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.navbar a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: hsla(226, 41%, 10%, 0.952);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem;
+    
+}
+
+.container-item {
+    width: var(--card-width);
+    height: 450px;
+    border-radius: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    font-size: 1.1rem;
+    text-align: start;
+    line-height: 1.8rem;
+}
+
+/* .container-item.menu::after {
+    /* content: 'About US'; 
+    content: 'Жабка Эпоу';
+    font-size: 1.3rem;
+    width: calc(var(--card-width) + 2rem);
+    height: 200px;
+    background-color: hsl(145, 58%, 55%);
+    text-align: center;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    z-index: -1;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.container-item.menu:nth-child(2)::after {
+    /* content: 'Shedule'; 
+    content: 'Бэээргер Стээээс';
+    background-color: hsl(195, 74%, 62%);
+    
+}
+
+.container-item.menu:nth-child(3)::after {
+    /* content: 'Adress'; 
+    content: 'Шаверма классическая';
+    background-color: hsl(15, 100%, 70%);
+}
+
+.container-item.menu:nth-child(4)::after {
+    /* content: 'Adress'; 
+    content: 'Шаверма свиная';
+    background-color: hsl(43, 84%, 65%);
+} */
+
+.table {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+footer {
+    background-color: hsl(246, 80%, 60%);
+    height: 3rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.active {
+    background-color: hsla(226, 41%, 10%, 0.952);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.menu-item {
+    margin-bottom: 1rem;
+    font-size: larger;
+    font-weight: 800;
+}   
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cost {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.menu-description {
+    height: 180px;
+}
+
+.menu-img {
+    height: 150px;
+    object-fit: fill;
+    border-radius: 1rem;
+}
